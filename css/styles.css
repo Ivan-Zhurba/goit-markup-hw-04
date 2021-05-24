@@ -9,6 +9,7 @@
     --bcg-fonlink: #F5F4FA;
     --bcg-imgborder: #EEEEEE;
     --brd-header:#ECECEC;
+    --bcg-hero:#C4C4C4;
 }
 
 h1,
@@ -184,6 +185,21 @@ body {
     padding-bottom:200px ;
 
 }
+.overlay{
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:var(--bcg-hero) ;
+    background-image: linear-gradient(
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4) 
+    ), url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
  /* ===========О компании==========*/
   .section-company{
      padding-bottom: 47px ;
