@@ -10,6 +10,8 @@
     --bcg-imgborder: #EEEEEE;
     --brd-header:#ECECEC;
     --bcg-hero:#C4C4C4;
+    --icon-fill: #AFB1B8;
+   
 }
 
 h1,
@@ -239,19 +241,22 @@ body {
     letter-spacing: 0.03em;
     color: var(--address-color);
 }
-.company-picture{
+.company-block{
     display: flex;
+    width: 270px;
+    height: 120px;
     justify-content: center;
-    
+    align-items: center;
+    background-color:var(--bcg-fonlink);
+}
+.company-icon{
+    width: 70px;
+    height: 70px;
 }
 .company-link{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.company-icon{
-    width: 270px;
-    height: 120px;
+
+
 }
 /*======================WORK========================*/
  .section-work{
@@ -338,7 +343,7 @@ body {
     height: 44px;
     border-radius: 50%;
     background-color: var(--background-textcolor) ;
-    fill: #AFB1B8;
+    fill:var(--icon-fill);
 
 }
 .social-list-link:hover,
@@ -349,9 +354,48 @@ body {
 .social-list-link:focus .social-list-icon{
     fill: var(--background-textcolor);
 }
+/*================ПОСТІЙНІ КЛІЄНТИ==========================*/
+.section-client{
+    padding-top: 21px;
+    padding-bottom: 88px;
+}
+.client-title{
+    font-weight: 700px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.client-list{
+    display: flex;
+     justify-content: space-between;
+}
+.client-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-fill);
+    box-sizing: border-box;
+    border-radius: 4px; 
+}
+.client-link:hover,
+.client-link:focus{
+    border: 1px solid var(--second-color);
+}
+.client-icon{
+    width: 106px;
+    height: 60px;
+    fill: var(--icon-fill);
+}
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+    fill: var(--second-color);
+}
 
-   
-/* Футер*/
+/*=========== Футер==============*/
 .footer-section {
   background:var(--background-color);
   padding-top: 60px;
@@ -413,7 +457,16 @@ body {
 }
 .button-item:not(:last-child){
     margin-right: 8px;
-   
+}
+.button-item{
+    display: block;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.button-item:hover .button,
+.button-item:focus .button{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
     .button{
     font-family: inherit;
@@ -458,7 +511,12 @@ body {
     flex-basis: calc((100%-270px)/9);
     margin-top: 30px;
     margin-left: 30px;
-   
+}
+.portfolio-item:hover,
+.portfolio-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-item:not(:nth-child(3n)){
     margin-left: 30px;
