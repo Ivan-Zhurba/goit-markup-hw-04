@@ -86,6 +86,7 @@ body {
  .site-tel{
      display: flex;
      align-items: center;  
+     justify-content: center;
  }
  .comunication:not(:last-child) {
      margin-right: 50px;
@@ -129,6 +130,8 @@ body {
 }
 
 .site-tel-link {
+    display: flex;
+    align-items: center;
    font-weight: 500;
    font-size: 14px;
    line-height: 1.14;
@@ -137,8 +140,17 @@ body {
 }
 .site-tel-link:hover,
 .site-tel-link:focus {
-   color: var(--second-color);
+    color: var(--second-color);
 }
+.site-tel-icon{
+    margin-right: 10px;
+    fill: currentColor;
+}
+.comunication{
+      display: flex;
+      align-items: center;
+  }     
+  
 
     /*================Герой=============== */
 
@@ -226,7 +238,20 @@ body {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--address-color);
-   
+}
+.company-picture{
+    display: flex;
+    justify-content: center;
+    
+}
+.company-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.company-icon{
+    width: 270px;
+    height: 120px;
 }
 /*======================WORK========================*/
  .section-work{
@@ -269,6 +294,7 @@ body {
     font-size: 16px;
     line-height: 1.1875;
    color: var(--address-color);
+   margin-bottom: 16px;
    
 }
 .team-item {
@@ -292,7 +318,38 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
 }
+/*====================SOCIAL-LIST====================*/
+.social-list-icon{
+    width: 20px;
+    height: 20px;
+}
+.social-list{
+    display: flex;
+    justify-content: space-between;
+}
+.social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--background-textcolor) ;
+    fill: #AFB1B8;
+
+}
+.social-list-link:hover,
+.social-list-link:focus{
+    background-color:var(--second-color);
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon{
+    fill: var(--background-textcolor);
+}
+
    
 /* Футер*/
 .footer-section {
@@ -307,6 +364,7 @@ body {
     line-height: 1.714;
     color: var(--background-textcolor);
     margin-bottom: 9px;
+    margin-right: 70px;
 }
 .footer-link {
     font-style: normal;
@@ -322,7 +380,30 @@ body {
         display: inline-block;
         margin-bottom: 20px;
     }
+    .social-list-footer{
+        display: flex;
+    }
+.footer-title{
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--background-textcolor);
+    margin-bottom: 20px;
+   
 
+}
+.footer-bcg{
+    background: rgba(255, 255, 255, 0.1);
+    fill: var(--background-textcolor);
+}
+.footer-conteiner{
+    display: flex;
+    align-items: baseline;
+}
+
+   
 
     /*===================================PORTFOLIO===================================*/
 .portfolio-conteiner{
